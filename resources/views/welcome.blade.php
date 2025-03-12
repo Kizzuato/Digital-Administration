@@ -8,12 +8,12 @@
     @vite(['resources/css/app.css', 'resources/js/app.js'])
 </head>
 
-<body class="bg-orange-100 dark:bg-gray-900 min-h-screen">
-    @include('navbar')
-    
-    <div class="flex">
-        @include('sidebar')
-        <div class="container mx-auto p-6">
+<body class="bg-orange-100 dark:bg-gray-900 flex">
+    @include('sidebar')
+
+    <div class="container">
+        @include('navbar')
+        <div class="mx-auto p-6">
             <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
                 <div class="bg-white dark:bg-gray-800 p-6 rounded-lg shadow-md">
                     <h2 class="text-xl font-semibold text-orange-600 dark:text-orange-400">Total Data Penjualan</h2>
