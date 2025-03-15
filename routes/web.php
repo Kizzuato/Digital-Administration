@@ -12,7 +12,7 @@ Route::get('/dashboard', function () {
 })->middleware(['auth', 'verified'])->name('dashboard');
 
 Route::get('/data-rekapitulasi', function () {
-    return view('data_rekapitulasi', ['title' => 'Data rekapitulasi']);
+    return view('rekapitulasi/data_rekapitulasi', ['title' => 'Data rekapitulasi']);
 })->middleware(['auth', 'verified'])->name('data-rekapitulasi');
 
 Route::get('/produk', function () {
